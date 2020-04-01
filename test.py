@@ -13,6 +13,7 @@ def gamilton_cypher(full_str: str, marchroute_list: List[List[int]], marchroute_
                 string_convert.append(sp[crypto_key])
             result += ''.join(string_convert)
         i += 8
+
     return result
 
 # маршруты шифрования с помощью которых выполняется обход строки
@@ -23,7 +24,7 @@ m4 = [5, 0, 6, 3, 2, 1, 7, 4]
 marchroute_list = [m1, m2, m3, m4]
 
 string_input = input("Введите строку для шифрования:")
-marchroute_input = list(map(int, input("Введите номер маршрута шифрования:").split(',')))
+marchroute_input = list(map(int, input("Введите номера маршрутов шифрования через запятую:").split(',')))
 
 len_string_input = len(string_input)
 
